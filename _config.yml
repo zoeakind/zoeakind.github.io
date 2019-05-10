@@ -1,2 +1,3 @@
 name: Zoe A. Kind 
 markdown: kramdown
+permalink: /journal/:year/:month/:day/:title
