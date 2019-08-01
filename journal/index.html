@@ -3,14 +3,9 @@ layout: default
 title: Journal Entries
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
 
-<ul>
+<ul class="posts">
   {% for post in site.categories.journal %}
     {% if post.url %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -18,7 +13,7 @@ title: Journal Entries
   {% endfor %}
 </ul>
 
-<ul>
+<ul class="posts">
   {% for post in site.categories.run %}
     {% if post.url %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
