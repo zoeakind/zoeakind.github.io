@@ -6,8 +6,8 @@ title: Running Log
 
 
 {% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
+  
+  <ul class="posts">
     {% for post in category[1] %}
       <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
